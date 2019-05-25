@@ -1,0 +1,27 @@
+## Install java
+sudo apt update
+#sudo apt upgrade
+sudo apt install openjdk-8-jdk
+
+#java -version
+##sudo update-alternatives --config java #we want default 8#
+
+
+##Add Debian repository,  first make confiable then add it
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+
+##Install Jenkins
+sudo apt update
+sudo apt updatesudo apt install jenkins
+
+
+##Firewall
+sudo ufw allow 8080
+sudo ufw status
+
+
+##Setting up
+http://my_ip:8080
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
