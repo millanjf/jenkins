@@ -25,3 +25,9 @@ sudo ufw status
 ##Setting up
 http://my_ip:8080
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+##Prblems
+http://my_ip:8080/restart
+sudo service --status-all | grep 'jenkins'
+sudo service jenkins stop/start
