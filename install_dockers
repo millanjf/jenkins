@@ -1,7 +1,17 @@
 ##https://docs.docker.com/engine/reference/commandline/docker/
 #https://hub.docker.com/_/jenkins
+#sudo systemctl enable/disable doscker
+#sudo systemctl start/stop docker
+#sudo systemctl statuss docker
+#sudo docker ps
 
 
 docker pull jenkins
 docker run --name TestJenkins -p 8080:8080 -p 5000:5000 -v /Users/userName/Desktop/Dockers/Jenkins:/var/jenkins_home jenkins
 #sudo chown -R 1000:1000 /Users/userName/Desktop/Dockers/
+
+
+
+#docker volume create nameVolumeDocker
+#docker volume ls
+#docker run --name TestJenkins -p 8080:8080 -p 5000:5000 -v nameVolumeDocker:/var/jenkins_home jenkins
