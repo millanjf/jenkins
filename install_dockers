@@ -1,0 +1,7 @@
+##https://docs.docker.com/engine/reference/commandline/docker/
+#https://hub.docker.com/_/jenkins
+
+
+docker pull jenkins
+docker run --name TestJenkins -p 8080:8080 -p 5000:5000 -v /Users/userName/Desktop/Dockers/Jenkins:/var/jenkins_home jenkins
+#sudo chown -R 1000:1000 /Users/userName/Desktop/Dockers/
