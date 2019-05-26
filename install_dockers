@@ -12,6 +12,6 @@ docker run --name TestJenkins -p 8080:8080 -p 5000:5000 -v /Users/userName/Deskt
 
 
 
-#docker volume create nameVolumeDocker
+#docker volume create nameVolumeDocker  --- th volume will be created in /var/lib/docker/volumes
 #docker volume ls
 #docker run --name TestJenkins -p 8080:8080 -p 5000:5000 -v nameVolumeDocker:/var/jenkins_home jenkins
